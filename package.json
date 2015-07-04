@@ -1,0 +1,40 @@
+{
+  "name": "kotsbp",
+  "description": "A base for projects built with KnockoutJS and Typescript",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "setup": "jspm update && tsd reinstall",
+    "start": "live-server --port=9000 --open=./",
+    "test": "karma start --single-run --browsers=PhantomJS"
+  },
+  "devDependencies": {
+    "jspm": "^0.16.0-beta.3",
+    "karma": "^0.12.37",
+    "karma-cli": "^0.1.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.6",
+    "karma-jspm": "git+https://github.com/Workiva/karma-jspm.git",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "live-server": "^0.7.1",
+    "phantomjs": "^1.9.17",
+    "tsd": "^0.6.3"
+  },
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "css": "github:systemjs/plugin-css@^0.1.13",
+      "html": "github:systemjs/plugin-text@^0.0.2",
+      "jquery": "github:components/jquery@^2.1.4",
+      "knockout": "github:knockout/knockout@^3.3.0",
+      "knockout-paging": "github:ErikSchierboom/knockout-paging@^0.2.1",
+      "knockout-postbox": "github:rniemeyer/knockout-postbox@^0.5.2",
+      "knockout-punches": "github:mbest/knockout.punches@^0.5.1",
+      "knockout-switch-case": "github:mbest/knockout-switch-case@^2.1.0",
+      "knockout-validation": "github:Knockout-Contrib/Knockout-Validation@^2.0.3"
+    },
+    "devDependencies": {
+      "typescript": "github:mhegazy/typescript@v1.5-beta2"
+    }
+  }
+}
